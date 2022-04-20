@@ -1,0 +1,122 @@
+.game-title{
+    text-align: center;
+    margin: 3em 0;
+}
+.game-card{
+    position: relative;
+    margin: 0 auto;
+    width: 500px;
+    height: max-content;
+    border: 2px solid #333;
+}
+.line-1{
+    position: absolute;
+    bottom: 0;
+    border-top: 2px solid #333;
+    width: 590px;
+    transform: rotate(-32deg);
+    transform-origin: 0% 0%;
+}
+.line-2{
+    position: absolute;
+    top: 0;
+    border-top: 2px solid #333;
+    width: 590px;
+    transform: rotate(32deg);
+    transform-origin: 0% 0%;
+}
+.line-3{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 155px;
+    border-bottom: 2px solid #333;
+}
+.line-4{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 311px;
+    border-left: 2px solid #333;
+}
+.karatasi-row{
+    position: relative;
+    display: flex; 
+    border: 1px dotted #fff;
+}
+.karatasi-col{
+    width: 100%;
+    height: 100px;
+    border: 1px dotted #fff;
+}
+.karatasi-position{
+    border: 2px dotted grey;
+    width: 40px;
+    height: 40px;
+}
+.top-pos-center{
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.top-pos-left{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+.top-pos-right{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+.center-pos-left{
+    position: absolute;
+    top: 25px;
+    left: -20px;
+}
+.center-pos-center{
+    margin: 25px auto;            
+}
+.center-pos-right{
+    position: absolute;
+    top: 25px;
+    right: -20px;
+}
+.bottom-pos-left{
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+}
+.bottom-pos-center{
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.bottom-pos-right{
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+}
+
+.team-a{
+    background: blue;
+    margin: 10px auto;
+    width: 20px;
+    height: 20px;
+}
+.team-b{
+    background: green;
+    margin: 10px auto;
+    width: 20px;
+    height: 20px;
+}
+body {
+    /* Prevent the user selecting text in the example */
+    user-select: none;
+}
