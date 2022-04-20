@@ -1,4 +1,5 @@
 var dragged;
+var move_sound = new Audio('move.wav');
 
 /* events fired on the draggable target */
 document.addEventListener("drag", function (event) {
@@ -40,12 +41,12 @@ document.addEventListener("dragleave", function (event) {
 document.addEventListener("drop", function (event) {
     // prevent default action (open as link for some elements)
     event.preventDefault();
-    console.log(event.target.className);
 
     // move dragged elem to the selected drop target
     if (event.target.className.includes("dropzone")) {
         event.target.style.background = "";
         dragged.parentNode.removeChild(dragged);
         event.target.appendChild(dragged);
+        move_sound.play();
     }
 }, false);
